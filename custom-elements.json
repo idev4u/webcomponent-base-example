@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "hello-world.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "HelloCard",
+          "members": [
+            {
+              "kind": "field",
+              "name": "nameOfPersonAddressed",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "_shadowRoot"
+            }
+          ],
+          "superclass": {
+            "name": "HTMLElement"
+          },
+          "tagName": "hello-card",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "hello-card",
+          "declaration": {
+            "name": "HelloCard",
+            "module": "hello-world.js"
+          }
+        }
+      ]
+    }
+  ]
+}
