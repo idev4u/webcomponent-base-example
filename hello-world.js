@@ -2,8 +2,8 @@
 const template = document.createElement('template')
 
 template.innerHTML = `
-    <div class="card">
-        <div card-body></div>
+    <div class="view">
+        <div view-body></div>
     </div>
 `
 
@@ -16,8 +16,9 @@ class HelloCard extends HTMLElement{
             template.content.cloneNode(true)
         );
     }
+    // render the responed view
     connectedCallback(){
-        this.$card = this.querySelector('.card-body');
+        this.$view = this.querySelector('.view-body');
         let $message = document.createElement('p');
         let name = this.nameOfPersonAddressed;
         $message.innerHTML = `Message: hello ${name}`;
